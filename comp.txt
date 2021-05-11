@@ -1,0 +1,7 @@
+a.c: In function ‘main’:
+a.c:5:1: warning: implicit declaration of function ‘pritf’ [-Wimplicit-function-declaration]
+ pritf("hello world");
+ ^
+/tmp/ccdYRZ0U.o: In function `main':
+a.c:(.text+0xf): undefined reference to `pritf'
+collect2: error: ld returned 1 exit status
