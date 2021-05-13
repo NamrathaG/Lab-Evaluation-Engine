@@ -6,9 +6,5 @@ public native void getquestion();
 public native void sendv(String msg1);
 public native void recv();
 public native void upload();
-
-
-
-
 }
 
