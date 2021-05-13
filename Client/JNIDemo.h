@@ -47,6 +47,14 @@ JNIEXPORT void JNICALL Java_JNIDemo_sendv
 JNIEXPORT void JNICALL Java_JNIDemo_recv
   (JNIEnv *, jobject);
 
+/*
+ * Class:     JNIDemo
+ * Method:    upload
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_JNIDemo_upload
+  (JNIEnv *, jobject);
+
 #ifdef __cplusplus
 }
 #endif

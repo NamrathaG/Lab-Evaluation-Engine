@@ -53,7 +53,7 @@ system(strcat("cat check.txt < ",filename));
   system("./output.out > run.txt");
 */
 
-system("echo hi");
+//system("echo hi");
 char filename[200];
 
 memset(filename,'\0',200);
@@ -66,7 +66,7 @@ memset(filename,'\0',200);
 char echoing[300]="echo ";
 memset(echoing,'\0',300);
 strcat(echoing,filename);
-system(echoing);
+//system(echoing);
 
 
   system(filename);
@@ -81,19 +81,21 @@ return 0;
 }
 
 
-
-
-/*
-fucntion upload()
+JNIEXPORT void JNICALL Java_JNIDemo_upload(JNIEnv * env, jobject obj)
 {
-    system("ftp 10.75.3.68");
-  //printf("\nWaiting for the teacher to send the result\n");
-  //printf("\nResult=");
-  int recvbytes3=recv(sd,buf,sizeof(buf),0); //score
+//char buf[100];
 
+//system("echo hi");
+
+    system("ftp 172.16.59.40");
+ // printf("\nWaiting for the teacher to send the result\n");
+ 
+  //int recvbytes=recv(sd,buf,sizeof(buf),0);
+//buf[recvbytes]='\0';
+//printf("Your marks are %s",buf); 
 }
 
-*/
+
    
 
 
@@ -101,9 +103,9 @@ JNIEXPORT void JNICALL Java_JNIDemo_recv(JNIEnv * env,jobject obj)
 {
 
  
-system("ls");
+//system("ls");
 sleep(25);
-system("ls");
+//system("ls");
  //const char *name = (*env)->GetStringUTFChars(env, name1, 0);
     //printf("%s", name);
 //const  int sd=(int)sd1;
@@ -186,7 +188,7 @@ int fg2=write(fo2,hello,10);
 close(fo2);
 
   address.sin_family=AF_INET;
-  address.sin_addr.s_addr=inet_addr("10.76.1.94");
+  address.sin_addr.s_addr=inet_addr("172.16.59.40");
   address.sin_port=htons(9701);
   int result=connect(sd,(struct sockaddr*)&address,len);
 
@@ -215,7 +217,7 @@ mysd[1] = '\0';
 int fo1=open("socket.txt",O_RDWR);
 if(fo1==-1)
 {
-system("ls");
+//system("ls");
 }
 
 int fg1=write(fo1,mysd,O_RDWR);
